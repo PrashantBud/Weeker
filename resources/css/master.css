@@ -1,0 +1,52 @@
+.weeker {
+  font-family: "Inter", Calibri, Helvetica;
+}
+.weeker .date_plugin_holders {
+  /* border:1px solid #CCCCCC; */
+}
+.weeker .date_plugin_holders th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #eeeeee;
+  font-weight: 100;
+}
+.weeker td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #eeeeee;
+  font-weight: 100;
+}
+.weeker .date_plugin_holders th .day_plaque {
+  font-size: 12px;
+  color: #507bff;
+  display: block;
+}
+.weeker .date_plugin_holders th .day_actual {
+  font-size: 14px;
+}
+.entity_staff_name {
+  font-size: 14px !important;
+}
+.date_plan_event_marker {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 3px;
+}
+.date_plan_event_marker .title {
+  display: block;
+  font-size: 12px;
+}
+.date_plan_event_marker .timespan {
+  font-size: 13px;
+}
+.date_plan_event_marker.marker_blue {
+  background: #507bff;
+  border: 1px solid #507bff;
+  color: #ffffff;
+}
+.date_plan_event_marker.marker_lemon {
+  background: #3fff00;
+  border: 1px solid #3fff00;
+  color: #ffffff;
+}

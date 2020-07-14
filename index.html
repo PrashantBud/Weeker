@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weekday Plugin</title>
+    <link rel="stylesheet" href="resources/css/master.css" />
+  </head>
+  <body style="font-family: Arial;">
+    <div class="plugin_example"></div>
+
+    <div class="date_plugin">
+      <!--<table class="date_plugin_holders" cellspacing=0>
+        <thead>
+          <tr>
+            <th>
+              Staff
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="entity_staff_name">Michael Scott</span></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <div class="date_plan_event_marker">
+                    <span class="title">Project A</span>
+                    <span class="timespan">08:00 PM to 10:00 PM</span>
+                  </div>
+                  <div class="date_plan_event_marker marker_lemon">
+                    <span class="title">Project B</span>
+                    <span class="timespan">10:15 PM to 11:00 PM</span>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                  <div class="date_plan_event_marker">
+                    <span class="title">Project A</span>
+                    <span class="timespan">08:00 PM to 10:00 PM</span>
+                  </div>
+                  <div class="date_plan_event_marker marker_blue">
+                    <span class="title">Project B</span>
+                    <span class="timespan">10:15 PM to 11:00 PM</span>
+                  </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="entity_staff_name">Jim Halpert</span></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <div class="date_plan_event_marker">
+                    <span class="title">Project A</span>
+                    <span class="timespan">08:00 PM to 10:00 PM</span>
+                  </div>
+                  <div class="date_plan_event_marker marker_blue">
+                    <span class="title">Project B</span>
+                    <span class="timespan">10:15 PM to 11:00 PM</span>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+      </table>-->
+    </div>
+  </body>
+  <script type="text/javascript" src="resources/js/moment.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.min.js"></script>
+  <script type="text/javascript" src="resources/js/Weeker.js"></script>
+  <script type="text/javascript">
+    var sample_data = {
+      "001": {
+        name: "Michael Scott",
+        events: {
+          "2020-07-15": [
+            {
+              time_start: "08:00:00",
+              time_end: "09:00:00",
+              event_name: "Morning Shift",
+            },
+          ],
+        },
+      },
+      "002": {
+        name: "Dwight Schrute",
+      },
+      "003": {
+        name: "Jim Halpert",
+      },
+      "004": {
+        name: "Creed Bratton",
+        events: {
+          "2020-07-14": [
+            {
+              time_start: "08:00:00",
+              time_end: "09:00:00",
+              event_name: "Morning Shift",
+            },
+          ],
+          "2020-07-17": [
+            {
+              time_start: "08:00:00",
+              time_end: "09:00:00",
+              event_name: "Morning Shift",
+            },
+          ],
+        },
+      },
+      "005": {
+        name: "Kevin Malone",
+      },
+      "006": {
+        name: "John Krasinski",
+      },
+      "007": {
+        name: "Walter Oppenheimer",
+      },
+      "008": {
+        name: "Srinivisan Ramanujan",
+      },
+    };
+
+    var weeker = Weeker({
+      mountOn: ".plugin_example",
+      data: sample_data,
+    });
+
+    weeker.render();
+  </script>
+</html>
